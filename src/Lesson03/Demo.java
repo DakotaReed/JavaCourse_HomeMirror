@@ -21,7 +21,6 @@ public class Demo {
         }
 
             String n = "Minimal value is: " + minValue + ". Minimal value is: " + maxValue + ". Average is: " + average + ".";
-            //return n;
         System.out.println(n);
 
         }
