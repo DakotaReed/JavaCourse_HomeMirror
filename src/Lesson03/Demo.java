@@ -20,7 +20,7 @@ public class Demo {
             average += array[i];
         }
 
-            String n = "Minimal value is: " + minValue + ". Minimal value is: " + maxValue + ". Average is: " + average + ".";
+            String n = "Minimal value is: " + minValue + ". Maximal value is: " + maxValue + ". Average is: " + average + ".";
         System.out.println(n);
 
         }
