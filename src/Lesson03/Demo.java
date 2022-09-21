@@ -7,6 +7,7 @@ public class Demo {
         int minValue = array[0];
         int maxValue = array[0];
         int average = 0;
+        int sum = 0;
 
         for (int i = 1; i < array.length; i++) {
             if (array[i] < minValue) {
@@ -16,11 +17,12 @@ public class Demo {
             if (array[i] > maxValue) {
                 maxValue = array[i];
             }
-
-            average += array[i];
+            sum += array[i];
         }
 
-            String n = "Minimal value is: " + minValue + ". Maximal value is: " + maxValue + ". Average is: " + average + ".";
+        average = sum/ array.length;
+
+        String n = "Minimal value is: " + minValue + ". Maximal value is: " + maxValue + ". Average is: " + average + ".";
         System.out.println(n);
 
         }
