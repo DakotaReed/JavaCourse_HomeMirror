@@ -1,22 +1,24 @@
-package Lesson03;
+package Lesson04;
 
 public class MobileDevice {
-
+//Features Attributes
     String  model;
     char os;
     double version;
     boolean hasFlash;
     int price;
-    int screenWidth;
-    int screenHeight;
 
-
+//Methods Actions
     void printParameters() {
         System.out.println("Model is: "+model+". Operation System is: "+os+". Version is: "+version+". If has flash? "+hasFlash+". Price is: "+price);
     }
 
-    double calculateArea() {
-        return screenWidth*screenHeight;
+    void calculateArea(int screenWidth, int screenHeight) {
+        if (screenWidth > 0 && screenHeight > 0)
+        System.out.println("Area is: " + screenHeight*screenWidth);
+        else
+            System.out.println("Wrong inter");
+
     }
 
     void pictureQuality() {

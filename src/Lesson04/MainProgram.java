@@ -1,6 +1,6 @@
-package Lesson03;
+package Lesson04;
 
-public class MainProgram {
+public class MainProgram extends MobileDevice {
     public static void main(String[] args) {
 
         MobileDevice dev1 = new MobileDevice();
@@ -9,11 +9,9 @@ public class MainProgram {
         dev1.version = 6.0; //not sure
         dev1.hasFlash = true;
         dev1.price = 2500;
-        dev1.screenWidth = 9;
-        dev1.screenHeight = 10;
+        dev1.calculateArea(2,3);
 
         dev1.printParameters();
-        System.out.println(dev1.calculateArea());
         dev1.pictureQuality();
         System.out.println();
 
@@ -25,12 +23,12 @@ public class MainProgram {
         dev2.version = 8.0; //not sure
         dev2.hasFlash = false;
         dev2.price = 1500;
-        dev2.screenWidth = 5;
-        dev2.screenHeight = 8;
+        dev2.calculateArea(4,5);
 
         dev2.printParameters();
-        System.out.println(dev2.calculateArea());
         dev2.pictureQuality();
 
     }
+
+
 }

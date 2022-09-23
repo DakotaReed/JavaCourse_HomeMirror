@@ -23,7 +23,7 @@ public class ExceptionHandling02 {
     public static void badMethod() {
         //throw new RuntimeException();
         RuntimeException e = new RuntimeException();
-        //throw e;
+        throw e;
     }
 
 }
