@@ -8,4 +8,5 @@ public class IE extends Web {
         System.out.println("Version is: " + version);
         Details();
     }
+
 }

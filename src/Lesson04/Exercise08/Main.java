@@ -3,8 +3,8 @@ package Lesson04.Exercise08;
 public class Main {
     public static void main(String[] args) {
 
-        Client client = new Client();
-        client.timeStamp = "24/09/22 00:04:28";
+//        Client client = new Client();
+//        client.timeStamp = "24/09/22 00:04:28";
 
         Chrome chrome = new Chrome();
         chrome.version = 105.0;
@@ -32,4 +32,5 @@ public class Main {
         ios.callPrint();
 
     }
+
 }

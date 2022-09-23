@@ -9,7 +9,6 @@ public class iOS extends Mobile {
         System.out.println("osVersion is: " + osVersion);
         System.out.println("Price is: " + price);
         Details();
-
     }
 
 }
