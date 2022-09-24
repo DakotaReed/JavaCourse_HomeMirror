@@ -226,7 +226,6 @@ public class FinalFunctions {
             int x = array[i];
             if (x<0)
                 x = -x;
-
             List<String> list = new ArrayList<>();
             for (int i0=2; i0<x; i0++) {
                 if (x % i0 == 0)
