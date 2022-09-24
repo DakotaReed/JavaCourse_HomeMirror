@@ -1,16 +1,10 @@
 package Lesson02;
 
-import Lesson05.FinalExercises.FinalFunctions;
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class Statements11 extends FinalFunctions {
+public class Statements11 {
 
     public static int[] arr13 = {15,2,36,20,7};
 
     public static void main(String[] args) {
-
 
         int[] arr0 = {15,2,36,20,7};
         if (arr0[0]>arr0[1]) {
