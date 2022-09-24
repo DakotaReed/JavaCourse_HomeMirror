@@ -1,7 +1,6 @@
 package Lesson05.FinalExercises;
 
 import java.util.*;
-
 public class FinalFunctions {
 //------------------------------------------01------------------------------------------
 
