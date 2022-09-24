@@ -230,15 +230,13 @@ public class FinalFunctions {
             for (int i0=2; i0<x; i0++) {
                 if (x % i0 == 0)
                     break;
-                else {
+                else
                     list.add("one");
-                }
                 continue;
             }
             int size = list.size();
-            if (size == x-2) {
+            if (size == x-2)
                 System.out.println("Prime Number is: " + x);
-            }
         }
     }
 
