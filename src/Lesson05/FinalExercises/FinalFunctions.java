@@ -236,7 +236,6 @@ public class FinalFunctions {
                 }
                 continue;
             }
-
             int size = list.size();
             if (size == x-2) {
                 System.out.println("Prime Number is: " + x);
