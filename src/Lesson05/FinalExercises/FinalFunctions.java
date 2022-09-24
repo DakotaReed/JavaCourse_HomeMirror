@@ -3,7 +3,8 @@ package Lesson05.FinalExercises;
 import java.util.*;
 
 public class FinalFunctions {
-    //------------------------------------------01------------------------------------------
+//------------------------------------------01------------------------------------------
+
     String allChars = "";
 
     void reverseFullNumber(int x) {
@@ -19,7 +20,6 @@ public class FinalFunctions {
 
     //result = Integer.parseInt(allChars);
     //return result;
-
 //------------------------------------------02------------------------------------------
 
     void reverseFullNumberDouble(double y) {
@@ -38,7 +38,6 @@ public class FinalFunctions {
 //        System.out.println(afterPoint);
 //        String[] arrayAfterPoint = afterPoint.split("\\.");
 //        System.out.println(arrayAfterPoint[1] + "." + arrayAfterPoint[0]);
-
 //------------------------------------------03------------------------------------------
 
         void betweenOneAndTen(int[] a) {
@@ -51,6 +50,7 @@ public class FinalFunctions {
             System.out.println();
     }
 //------------------------------------------04------------------------------------------
+
     double ave = 0;
     double sum = 0;
 
@@ -85,6 +85,7 @@ public class FinalFunctions {
         }
     }
 //------------------------------------------06------------------------------------------
+
         int m;
         void DividesIntoFour(int[] d) {
             System.out.println();
@@ -100,6 +101,7 @@ public class FinalFunctions {
             System.out.println(list);
         }
 //------------------------------------------07------------------------------------------
+
     void medianOfArray(double[] e) {
         System.out.println();
         System.out.println("--------------07--------------");
@@ -116,6 +118,7 @@ public class FinalFunctions {
         System.out.println(median);
     }
 //------------------------------------------08------------------------------------------
+
     void wordsOfSongRandom (String words) {
         System.out.println();
         System.out.println("--------------08--------------");
@@ -130,6 +133,7 @@ public class FinalFunctions {
 //            i = new Random().nextInt(array.length);
 //            System.out.print(array[i] + " ");}
 //------------------------------------------09------------------------------------------
+
      void longestElement (String[][] array) {
          System.out.println();
          System.out.println("--------------09--------------");
@@ -151,6 +155,7 @@ public class FinalFunctions {
          }
      }
 //------------------------------------------10------------------------------------------
+
         int indexI = 0;
         int indexJ = 0;
     void searchingWord (String[][] array, String word) {
