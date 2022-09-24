@@ -155,8 +155,8 @@ public class FinalFunctions {
          }
          System.out.println();
         }
-        int indexI = 0;
-        int indexJ = 0;
+    int indexI = 0;
+    int indexJ = 0;
     void searchingWord (String[][] array, String word) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
