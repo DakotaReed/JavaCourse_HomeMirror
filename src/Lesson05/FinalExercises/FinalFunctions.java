@@ -182,7 +182,7 @@ public class FinalFunctions {
                 indexJ = j;
                 bestGrade = grade;
             }
-            }
+        }
         System.out.println("Best Grande is: " + bestGrade + ". Best Student is: " + array[1][indexJ]);
     }
 
