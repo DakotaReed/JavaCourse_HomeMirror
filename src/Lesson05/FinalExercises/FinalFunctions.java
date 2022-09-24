@@ -1,8 +1,6 @@
 package Lesson05.FinalExercises;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class FinalFunctions {
     //------------------------------------------01------------------------------------------
@@ -116,8 +114,63 @@ public class FinalFunctions {
         else
             median = (e[(len - 1)/2] + e[len/2])/2;
         System.out.println(median);
-
     }
+//------------------------------------------08------------------------------------------
+    void wordsOfSongRandom (String words) {
+        System.out.println();
+        System.out.println("--------------08--------------");
+
+        String[] array = words.split(" ");
+        List<String> listOfWords = Arrays.asList(array);
+        Collections.shuffle(listOfWords);
+        String list = Arrays.toString(listOfWords.toArray()).replace("[", "").replace("]", "");
+        System.out.println(list);
+    }
+//        for (int i=0; i<array.length; i++) {
+//            i = new Random().nextInt(array.length);
+//            System.out.print(array[i] + " ");}
+//------------------------------------------09------------------------------------------
+     void longestElement (String[][] array) {
+         System.out.println();
+         System.out.println("--------------09--------------");
+
+         int elementLength = array[0][0].length();
+         for (int i = 0; i < array.length; i++) {
+             for (int j = 0; j < array[i].length; j++) {
+                 if(array[i][j].length() > elementLength) {
+                     elementLength = array[i][j].length();
+                 }
+             }
+         }
+         for (int i = 0; i < array.length; i++) {
+             for (int j = 0; j < array[i].length; j++) {
+                 if (array[i][j].length() == elementLength) {
+                     System.out.println(array[i][j]);
+                 }
+             }
+         }
+     }
+//------------------------------------------10------------------------------------------
+        int indexI = 0;
+        int indexJ = 0;
+    void searchingWord (String[][] array, String word) {
+        System.out.println();
+        System.out.println("--------------10--------------");
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (array[i][j].equals(word)) {
+                    indexI = i;
+                    indexJ = j;
+                    System.out.println("Array[" + indexI + "][" + indexJ + "]");
+                }
+            }
+        }
+    }
+
+
+
+
 }
 
 

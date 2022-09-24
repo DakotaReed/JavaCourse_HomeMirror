@@ -10,6 +10,18 @@ public class FinalMain extends FinalFunctions {
         String[] arr1 = {"3","/","2"};
         //double[] arr2 = {2,4,6,8,10,1,3,5,7,9};
         double[] arr2 = Arrays.stream(arr).asDoubleStream().toArray();
+        String wordsOfSong = "Et Maintenant Nous Sommes Tout Seuls";
+        String[][] letters = {{"ABC"},
+                              {"AAAAA"},
+                              {"BBB"},
+                              {"kjhdsfkjo"},
+                              {"JDSDFHKJH"},
+                              {"FGH"},
+                              {"LXCVKJ"},
+                              {"XLCKVJL"},
+                              {"VCKJLK"},
+                              {"VLK;LK"},
+                              {"VLKL"}};
 
         finalExercise.reverseFullNumber(1234500);
         finalExercise.reverseFullNumberDouble(1230.458);
@@ -18,5 +30,8 @@ public class FinalMain extends FinalFunctions {
         finalExercise.calculator(arr1);
         finalExercise.DividesIntoFour(arr);
         finalExercise.medianOfArray(arr2);
+        finalExercise.wordsOfSongRandom(wordsOfSong);
+        finalExercise.longestElement(letters);
+        finalExercise.searchingWord(letters, "VCKJLK");
     }
 }
