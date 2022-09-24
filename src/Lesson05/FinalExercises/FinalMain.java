@@ -24,6 +24,7 @@ public class FinalMain extends FinalFunctions {
                               {"VLKL"}};
         String[][] gradeAndStudent = {{"85","76","45","91","82"},
                                       {"David", "Moshe", "Ilana", "Shlomo", "Hanna"}};
+        int[] arr3 = {1,20,3,40,5,60,7,80,9,100,-1,-20,-3,-40,-5,-60,-7,-80,-9,-100};
 
         finalExercise.reverseFullNumber(1234500);
         finalExercise.reverseFullNumberDouble(1230.458);
@@ -36,5 +37,6 @@ public class FinalMain extends FinalFunctions {
         finalExercise.longestElement(letters);
         finalExercise.searchingWord(letters, "VCKJLK");
         finalExercise.bestStudent(gradeAndStudent);
+        finalExercise.almostTheBiggestNumber(arr3);
     }
 }

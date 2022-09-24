@@ -58,8 +58,8 @@ public class FinalFunctions {
         System.out.println();
         System.out.println("--------------04--------------");
 
-        for (int i = 0; i < b.length; i++) {
-            sum += b[i];}
+        for (int i = 0; i < b.length; i++)
+            sum += b[i];
         System.out.println(ave = sum/b.length);
     }
 //------------------------------------------05------------------------------------------
@@ -141,16 +141,14 @@ public class FinalFunctions {
          int elementLength = array[0][0].length();
          for (int i = 0; i < array.length; i++) {
              for (int j = 0; j < array[i].length; j++) {
-                 if(array[i][j].length() > elementLength) {
+                 if(array[i][j].length() > elementLength)
                      elementLength = array[i][j].length();
-                 }
              }
          }
          for (int i = 0; i < array.length; i++) {
              for (int j = 0; j < array[i].length; j++) {
-                 if (array[i][j].length() == elementLength) {
+                 if (array[i][j].length() == elementLength)
                      System.out.println(array[i][j]);
-                 }
              }
          }
          System.out.println();
@@ -184,6 +182,25 @@ public class FinalFunctions {
             }
         }
         System.out.println("Best Grande is: " + bestGrade + ". Best Student is: " + array[1][indexJ]);
+    }
+//------------------------------------------11------------------------------------------
+
+    void almostTheBiggestNumber (int[] array) {
+        System.out.println();
+        System.out.println("--------------11--------------");
+
+        int max = array[0];
+        int previous = Integer.MIN_VALUE;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                previous = max;
+                max = array[i];
+            }
+            else if (array[i] > previous)
+                previous = array[i];
+        }
+        //System.out.println("Biggest: "+ max);
+        System.out.println("Second Biggest Number is: "+ previous);
     }
 
 }
