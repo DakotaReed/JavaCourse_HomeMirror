@@ -168,10 +168,28 @@ public class FinalFunctions {
             }
         }
     }
+//------------------------------------------10------------------------------------------
 
+    void bestStudent (String[][] array) {
+        System.out.println();
+        System.out.println("--------------10--------------");
 
-
+        int indexJ = 0;
+        int bestGrade = 0;
+        for (int j = 0; j < array[0].length; j++) {
+            int grade = Integer.parseInt(array[0][j]);
+            if (grade > bestGrade) {
+                indexJ = j;
+                bestGrade = grade;
+            }
+            }
+        System.out.println("Best Grande is: " + bestGrade + ". Best Student is: " + array[1][indexJ]);
+    }
 
 }
+
+
+
+
 
 

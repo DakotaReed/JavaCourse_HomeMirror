@@ -22,6 +22,8 @@ public class FinalMain extends FinalFunctions {
                               {"VCKJLK"},
                               {"VLK;LK"},
                               {"VLKL"}};
+        String[][] gradeAndStudent = {{"85","76","45","91","82"},
+                                      {"David", "Moshe", "Ilana", "Shlomo", "Hanna"}};
 
         finalExercise.reverseFullNumber(1234500);
         finalExercise.reverseFullNumberDouble(1230.458);
@@ -33,5 +35,6 @@ public class FinalMain extends FinalFunctions {
         finalExercise.wordsOfSongRandom(wordsOfSong);
         finalExercise.longestElement(letters);
         finalExercise.searchingWord(letters, "VCKJLK");
+        finalExercise.bestStudent(gradeAndStudent);
     }
 }
