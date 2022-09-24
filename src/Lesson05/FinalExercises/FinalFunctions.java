@@ -216,6 +216,33 @@ public class FinalFunctions {
             System.out.println("false");
 
     }
+//------------------------------------------13------------------------------------------
+
+    void primeNumbers (int[] array) {
+        System.out.println();
+        System.out.println("--------------13--------------");
+
+        for (int i=0; i<array.length; i++) {
+            int x = array[i];
+            if (x<0)
+                x = -x;
+
+            List<String> list = new ArrayList<>();
+            for (int i0=2; i0<x; i0++) {
+                if (x % i0 == 0)
+                    break;
+                else {
+                    list.add("one");
+                }
+                continue;
+            }
+
+            int size = list.size();
+            if (size == x-2) {
+                System.out.println("Prime Number is: " + x);
+            }
+        }
+    }
 
 }
 

@@ -1,8 +1,16 @@
 package Lesson02;
 
-public class Statements11 {
+import Lesson05.FinalExercises.FinalFunctions;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Statements11 extends FinalFunctions {
+
+    public static int[] arr13 = {15,2,36,20,7};
 
     public static void main(String[] args) {
+
 
         int[] arr0 = {15,2,36,20,7};
         if (arr0[0]>arr0[1]) {
@@ -38,6 +46,5 @@ public class Statements11 {
             sum += arr1[i];
         }
         System.out.println("Sum of all the elements of an array: " + sum);
-
     }
 }
