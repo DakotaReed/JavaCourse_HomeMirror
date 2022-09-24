@@ -1,7 +1,6 @@
 package Lesson05.FinalExercises;
 
 import Lesson02.Statements11;
-
 import java.util.Arrays;
 
 public class FinalMain extends Statements11 {
