@@ -4,6 +4,10 @@ public class Android extends Mobile {
 
     double osVersion;
     int price;
+    Android(double _osVersion, int _price) {
+        osVersion = _osVersion;
+        price = _price;
+    }
 
     void callPrint() {
         System.out.println("osVersion is: " + osVersion);

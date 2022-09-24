@@ -20,16 +20,23 @@ public class Main {
         desktop.Details();
         System.out.println();
 
-        Android android = new Android();
-        android.osVersion = 17.0;
-        android.price = 3000;
+        Android android = new Android(17.0, 3000);
         android.callPrint();
         System.out.println();
 
-        iOS ios = new iOS();
-        ios.osVersion = 15.0;
-        ios.price = 3500;
+        iOS ios = new iOS(15.0, 3500);
         ios.callPrint();
+
+//        Android android = new Android();
+//        android.osVersion = 17.0;
+//        android.price = 3000;
+//        android.callPrint();
+//        System.out.println();
+
+//        iOS ios = new iOS();
+//        ios.osVersion = 15.0;
+//        ios.price = 3500;
+//        ios.callPrint();
 
     }
 
