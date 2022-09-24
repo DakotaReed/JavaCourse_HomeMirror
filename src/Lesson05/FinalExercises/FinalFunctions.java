@@ -153,21 +153,17 @@ public class FinalFunctions {
                  }
              }
          }
-     }
-//------------------------------------------10------------------------------------------
-
+         System.out.println();
+        }
         int indexI = 0;
         int indexJ = 0;
     void searchingWord (String[][] array, String word) {
-        System.out.println();
-        System.out.println("--------------10--------------");
-
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 if (array[i][j].equals(word)) {
                     indexI = i;
                     indexJ = j;
-                    System.out.println("Array[" + indexI + "][" + indexJ + "]");
+                    System.out.println("Searching Word is here: Array[" + indexI + "][" + indexJ + "]");
                 }
             }
         }
