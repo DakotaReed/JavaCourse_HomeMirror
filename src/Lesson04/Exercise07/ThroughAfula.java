@@ -7,9 +7,10 @@ public class ThroughAfula extends Points{
             System.out.println("The way from: " + startingPoint + " ... To: " + finalDestination);
             result = "highway 2, highway 65, highway 75, highway 6, highway 40, highway 25, highway 90";
         }
-        else
+        else {
             System.out.println("Wrong Way");
-
+            result = "not can be. Entering wrong way point";
+        }
         return result;
 
     }

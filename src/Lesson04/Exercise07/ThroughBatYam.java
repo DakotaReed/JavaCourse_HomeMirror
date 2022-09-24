@@ -7,9 +7,10 @@ public class ThroughBatYam extends Points{
             System.out.println("The way from: " + startingPoint + " ... To: " + finalDestination);
             result = "highway 20, highway 4, highway, highway 7, highway 40, highway 25, highway 90";
         }
-        else
+        else {
             System.out.println("Wrong Way");
-
+            result = "not can be. Entering wrong way point";
+        }
             return result;
     }
 }

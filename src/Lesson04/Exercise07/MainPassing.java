@@ -15,5 +15,8 @@ public class MainPassing {
         way3.Passing("Bursa, Ramat Gan", "Eilat", null);
         way3.print();
 
+        ThroughLod way4 = new ThroughLod();
+        way4.Passing("Bursa, Ramat Gan", "Tel Aviv", "Lod");
+        way4.print();
     }
 }

@@ -7,8 +7,9 @@ public class ThroughLod extends Points{
             System.out.println("The way from: " + startingPoint + " ... To: " + finalDestination);
             result = "highway 20, highway 1, highway 6, highway 1, highway 90";
         }
-        else
+        else {
             System.out.println("Wrong Way");
+            result = "not can be. Entering wrong way point";}
 
         return result;
 
