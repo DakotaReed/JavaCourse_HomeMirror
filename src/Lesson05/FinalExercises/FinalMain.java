@@ -38,5 +38,6 @@ public class FinalMain extends FinalFunctions {
         finalExercise.searchingWord(letters, "VCKJLK");
         finalExercise.bestStudent(gradeAndStudent);
         finalExercise.almostTheBiggestNumber(arr3);
+        finalExercise.equalArrays(arr,arr3);
     }
 }

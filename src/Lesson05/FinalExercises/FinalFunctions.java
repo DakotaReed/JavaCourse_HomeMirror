@@ -202,6 +202,20 @@ public class FinalFunctions {
         //System.out.println("Biggest: "+ max);
         System.out.println("Second Biggest Number is: "+ previous);
     }
+//------------------------------------------12------------------------------------------
+
+    void equalArrays (int[] array, int[] array1) {
+        System.out.println();
+        System.out.println("--------------12--------------");
+
+        if (Arrays.equals(array, array1)) {
+
+            System.out.println("true");
+        }
+        else
+            System.out.println("false");
+
+    }
 
 }
 
