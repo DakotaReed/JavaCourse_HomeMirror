@@ -259,7 +259,6 @@ public class FinalFunctions extends FinalFunctions14__Methods {
         } else if (array.length == 1) {
             UnitsMethod(array);
             System.out.println(unit);
-
         }
     }
 
