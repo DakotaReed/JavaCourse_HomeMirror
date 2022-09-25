@@ -69,8 +69,8 @@ public class FinalFunctions14__Methods extends Statements11 {
                 "....¸.•´\n" +
                 "..¸. \n" +
                 "☻/\n" +
-                "/▌♥♥\n" +
-                "/ \\ ♥♥\n");
+                "/▌\n" +
+                "/ \\ \n");
     }
 
 }
