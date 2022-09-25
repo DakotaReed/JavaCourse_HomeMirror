@@ -42,5 +42,10 @@ public class FinalMain extends FinalFunctions {
         finalExercise.primeNumbers(arr13);
 
         finalExercise.numberInWords(654);
+        System.out.println();
+        System.out.println();
+
+//        System.out.println();
+        finalExercise.endOutPut();
     }
 }

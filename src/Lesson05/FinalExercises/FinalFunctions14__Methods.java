@@ -61,5 +61,9 @@ public class FinalFunctions14__Methods extends Statements11 {
         hundreds = hundredsStr[genderCode] + h;
         return hundreds;
     }
+    void endOutPut () {
+        String endOutPut = "ʕ•̫͡•ॽु\uD83E\uDDE0\uD83C\uDF81\uD83C\uDF80.*✲ﾟ｡⋆º°`°๑⁂*⁎\uD83C\uDD83\uD83C\uDD77\uD83C\uDD70\uD83C\uDD7D\uD83C\uDD7A \uD83C\uDD88\uD83C\uDD7E\uD83C\uDD84 \uD83C\uDD82\uD83C\uDD7E \uD83C\uDD7C\uD83C\uDD84\uD83C\uDD72\uD83C\uDD77⁎*⁂๑°`°º⋆｡ﾟ✲*.\uD83C\uDF80\uD83C\uDF81\uD83E\uDDE0ʕ•̫͡•ॽु";
+        System.out.println(endOutPut);
+    }
 
 }
