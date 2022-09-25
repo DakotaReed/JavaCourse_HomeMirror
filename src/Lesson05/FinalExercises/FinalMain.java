@@ -1,6 +1,5 @@
 package Lesson05.FinalExercises;
 
-import Lesson02.Statements11;
 import java.util.Arrays;
 
 public class FinalMain extends FinalFunctions {
@@ -41,5 +40,7 @@ public class FinalMain extends FinalFunctions {
         finalExercise.almostTheBiggestNumber(arr3);
         finalExercise.equalArrays(arr,arr3);
         finalExercise.primeNumbers(arr13);
+
+        finalExercise.numberInWords(654);
     }
 }

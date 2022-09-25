@@ -1,9 +1,7 @@
 package Lesson05.FinalExercises;
 
-import Lesson02.Statements11;
-
 import java.util.*;
-public class FinalFunctions extends Statements11 {
+public class FinalFunctions extends FinalFunctions14__Methods {
 //------------------------------------------01------------------------------------------
 
     String allChars = "";
@@ -41,14 +39,14 @@ public class FinalFunctions extends Statements11 {
 //        System.out.println(arrayAfterPoint[1] + "." + arrayAfterPoint[0]);
 //------------------------------------------03------------------------------------------
 
-        void betweenOneAndTen(int[] a) {
-            System.out.println();
-            System.out.println("--------------03--------------");
+    void betweenOneAndTen(int[] a) {
+        System.out.println();
+        System.out.println("--------------03--------------");
 
-            for (int i = 0; i < a.length; i++)
-                if (a[i] >= 1 && a[i] <= 10)
-                    System.out.print(a[i] * a[i] + " ");
-            System.out.println();
+        for (int i = 0; i < a.length; i++)
+            if (a[i] >= 1 && a[i] <= 10)
+                System.out.print(a[i] * a[i] + " ");
+        System.out.println();
     }
 //------------------------------------------04------------------------------------------
 
@@ -61,7 +59,7 @@ public class FinalFunctions extends Statements11 {
 
         for (int i = 0; i < b.length; i++)
             sum += b[i];
-        System.out.println(ave = sum/b.length);
+        System.out.println(ave = sum / b.length);
     }
 //------------------------------------------05------------------------------------------
 
@@ -87,20 +85,21 @@ public class FinalFunctions extends Statements11 {
     }
 //------------------------------------------06------------------------------------------
 
-        int m;
-        void DividesIntoFour(int[] d) {
-            System.out.println();
-            System.out.println("--------------06--------------");
+    int m;
 
-            List dividesIntoFour = new ArrayList<>();
-            for (int i=0; i<d.length; i++) {
-                m = d[i]%4;
-                if (m==0)
-                    dividesIntoFour.add(d[i]);
-            }
-            String list = Arrays.toString(dividesIntoFour.toArray()).replace("[", "").replace("]", "");
-            System.out.println(list);
+    void DividesIntoFour(int[] d) {
+        System.out.println();
+        System.out.println("--------------06--------------");
+
+        List dividesIntoFour = new ArrayList<>();
+        for (int i = 0; i < d.length; i++) {
+            m = d[i] % 4;
+            if (m == 0)
+                dividesIntoFour.add(d[i]);
         }
+        String list = Arrays.toString(dividesIntoFour.toArray()).replace("[", "").replace("]", "");
+        System.out.println(list);
+    }
 //------------------------------------------07------------------------------------------
 
     void medianOfArray(double[] e) {
@@ -112,15 +111,15 @@ public class FinalFunctions extends Statements11 {
 
         Arrays.sort(e);
 
-        if(len%2 != 0)
-            median = e[len/2];
+        if (len % 2 != 0)
+            median = e[len / 2];
         else
-            median = (e[(len - 1)/2] + e[len/2])/2;
+            median = (e[(len - 1) / 2] + e[len / 2]) / 2;
         System.out.println(median);
     }
 //------------------------------------------08------------------------------------------
 
-    void wordsOfSongRandom (String words) {
+    void wordsOfSongRandom(String words) {
         System.out.println();
         System.out.println("--------------08--------------");
 
@@ -135,28 +134,30 @@ public class FinalFunctions extends Statements11 {
 //            System.out.print(array[i] + " ");}
 //------------------------------------------09------------------------------------------
 
-     void longestElement (String[][] array) {
-         System.out.println();
-         System.out.println("--------------09--------------");
+    void longestElement(String[][] array) {
+        System.out.println();
+        System.out.println("--------------09--------------");
 
-         int elementLength = array[0][0].length();
-         for (int i = 0; i < array.length; i++) {
-             for (int j = 0; j < array[i].length; j++) {
-                 if(array[i][j].length() > elementLength)
-                     elementLength = array[i][j].length();
-             }
-         }
-         for (int i = 0; i < array.length; i++) {
-             for (int j = 0; j < array[i].length; j++) {
-                 if (array[i][j].length() == elementLength)
-                     System.out.println(array[i][j]);
-             }
-         }
-         System.out.println();
+        int elementLength = array[0][0].length();
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (array[i][j].length() > elementLength)
+                    elementLength = array[i][j].length();
+            }
         }
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (array[i][j].length() == elementLength)
+                    System.out.println(array[i][j]);
+            }
+        }
+        System.out.println();
+    }
+
     int indexI = 0;
     int indexJ = 0;
-    void searchingWord (String[][] array, String word) {
+
+    void searchingWord(String[][] array, String word) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 if (array[i][j].equals(word)) {
@@ -169,7 +170,7 @@ public class FinalFunctions extends Statements11 {
     }
 //------------------------------------------10------------------------------------------
 
-    void bestStudent (String[][] array) {
+    void bestStudent(String[][] array) {
         System.out.println();
         System.out.println("--------------10--------------");
 
@@ -186,7 +187,7 @@ public class FinalFunctions extends Statements11 {
     }
 //------------------------------------------11------------------------------------------
 
-    void almostTheBiggestNumber (int[] array) {
+    void almostTheBiggestNumber(int[] array) {
         System.out.println();
         System.out.println("--------------11--------------");
 
@@ -196,39 +197,37 @@ public class FinalFunctions extends Statements11 {
             if (array[i] > max) {
                 previous = max;
                 max = array[i];
-            }
-            else if (array[i] > previous)
+            } else if (array[i] > previous)
                 previous = array[i];
         }
         //System.out.println("Biggest: "+ max);
-        System.out.println("Second Biggest Number is: "+ previous);
+        System.out.println("Second Biggest Number is: " + previous);
     }
 //------------------------------------------12------------------------------------------
 
-    void equalArrays (int[] array, int[] array1) {
+    void equalArrays(int[] array, int[] array1) {
         System.out.println();
         System.out.println("--------------12--------------");
 
         if (Arrays.equals(array, array1)) {
 
             System.out.println("true");
-        }
-        else
+        } else
             System.out.println("false");
 
     }
 //------------------------------------------13------------------------------------------
 
-    void primeNumbers (int[] array) {
+    void primeNumbers(int[] array) {
         System.out.println();
         System.out.println("--------------13--------------");
 
-        for (int i=0; i<array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             int x = array[i];
-            if (x<0)
+            if (x < 0)
                 x = -x;
             List<String> list = new ArrayList<>();
-            for (int i0=2; i0<x; i0++) {
+            for (int i0 = 2; i0 < x; i0++) {
                 if (x % i0 == 0)
                     break;
                 else
@@ -236,15 +235,32 @@ public class FinalFunctions extends Statements11 {
                 continue;
             }
             int size = list.size();
-            if (size == x-2)
+            if (size == x - 2)
                 System.out.println("Prime Number is: " + x);
+        }
+    }
+//------------------------------------------14------------------------------------------
+
+    void numberInWords(int number) {
+        System.out.println();
+        System.out.println("--------------14--------------");
+
+        String s = Integer.toString(number);
+        char[] array = s.toCharArray();
+
+        if (array.length > 3)
+            System.out.println("Wrong Number! Only between 0 and 999.");
+        else if (array.length == 3) {
+            HundredsMethod(array);
+            System.out.println(hundreds + tens + unit);
+        } else if (array.length == 2) {
+            TensMethod(array);
+            System.out.println(tens + unit);
+        } else if (array.length == 1) {
+            UnitsMethod(array);
+            System.out.println(unit);
+
         }
     }
 
 }
-
-
-
-
-
-
