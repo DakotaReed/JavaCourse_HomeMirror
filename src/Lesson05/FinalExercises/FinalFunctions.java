@@ -50,7 +50,6 @@ public class FinalFunctions extends FinalFunctions14__Methods {
     }
 //------------------------------------------04------------------------------------------
 
-    double ave = 0;
     double sum = 0;
 
     void average(int[] b) {
@@ -59,7 +58,7 @@ public class FinalFunctions extends FinalFunctions14__Methods {
 
         for (int i = 0; i < b.length; i++)
             sum += b[i];
-        System.out.println(ave = sum / b.length);
+        System.out.println(sum / b.length);
     }
 //------------------------------------------05------------------------------------------
 
