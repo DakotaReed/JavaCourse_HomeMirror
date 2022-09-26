@@ -57,8 +57,9 @@ public class FinalFunctions14__Methods extends Statements11 {
             array[1] = y;
             TensMethod(array);
         }
+        if (genderCode == 0) {}
+        else hundreds = hundredsStr[genderCode] + h;
 
-        hundreds = hundredsStr[genderCode] + h;
         return hundreds;
     }
     void endOutPut () {

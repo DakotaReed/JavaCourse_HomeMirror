@@ -41,7 +41,7 @@ public class FinalMain extends FinalFunctions {
         finalExercise.equalArrays(arr,arr3);
         finalExercise.primeNumbers(arr13);
 
-        finalExercise.numberInWords(888);
+        finalExercise.numberInWords(-918);
         System.out.println();
 
         finalExercise.endOutPut();

@@ -248,8 +248,29 @@ public class FinalFunctions extends FinalFunctions14__Methods {
         String s = Integer.toString(number);
         char[] array = s.toCharArray();
 
+        if (number < 0) {
+            if (array.length > 4) {}
+            else {
+                System.out.print("Minus ");
+                ArrayList<Character> sample = new ArrayList<Character>();
+                for (int i = 0; i < array.length; i++) {
+                    sample.add(array[i]);
+                }
+
+                if (sample.size() == 4) {
+                    sample.remove(0);
+                    char[] myCharArray = new char[sample.size()];
+                    for (int i = 0; i < sample.size(); i++) {
+                        myCharArray[i] = sample.get(i);
+                    }
+                    array = myCharArray;
+                } else if (sample.size() == 3)
+                    array[0] = '0';
+            }
+        }
+
         if (array.length > 3)
-            System.out.println("Wrong Number! Only between 0 and 999.");
+            System.out.println("Wrong Number! Only between -999 and 999.");
         else if (array.length == 3) {
             HundredsMethod(array);
             System.out.println(hundreds + tens + unit);
