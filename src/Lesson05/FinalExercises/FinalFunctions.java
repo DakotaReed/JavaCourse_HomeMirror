@@ -256,7 +256,6 @@ public class FinalFunctions extends FinalFunctions14__Methods {
                 for (int i = 0; i < array.length; i++) {
                     sample.add(array[i]);
                 }
-
                 if (sample.size() == 4) {
                     sample.remove(0);
                     char[] myCharArray = new char[sample.size()];
@@ -264,7 +263,8 @@ public class FinalFunctions extends FinalFunctions14__Methods {
                         myCharArray[i] = sample.get(i);
                     }
                     array = myCharArray;
-                } else if (sample.size() == 3)
+                }
+                else if (sample.size() == 3)
                     array[0] = '0';
             }
         }
