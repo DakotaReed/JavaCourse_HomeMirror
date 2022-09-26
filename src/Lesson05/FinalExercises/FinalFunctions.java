@@ -26,10 +26,10 @@ public class FinalFunctions extends FinalFunctions14__Methods {
         System.out.println("--------------02--------------");
 
         String[] arr = String.valueOf(y).split("\\.");
-        int[] arrayAfterPoint = new int[2];
-        arrayAfterPoint[0] = Integer.parseInt(arr[0]); // 1
-        arrayAfterPoint[1] = Integer.parseInt(arr[1]); // 9
-        System.out.println(arrayAfterPoint[1] + "." + arrayAfterPoint[0]);
+        int[] arrayPointLess = new int[2];
+        arrayPointLess[0] = Integer.parseInt(arr[0]);
+        arrayPointLess[1] = Integer.parseInt(arr[1]);
+        System.out.println(arrayPointLess[1] + "." + arrayPointLess[0]);
     }
 
 //
